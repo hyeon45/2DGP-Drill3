@@ -55,8 +55,8 @@ def run_rectangle():
     run_bottom()
     run_left()
     
-def run_tri_bottom(x1, y1, x2, y2):
-    print('TRIANGLE_SIDE_BOTTOM')
+def run_tri_draw(x1, y1, x2, y2):
+    print('TRIANGLE_SIDE_DROW')
 
     steps = 30
     dx = (x2 - x1) / steps
@@ -68,41 +68,15 @@ def run_tri_bottom(x1, y1, x2, y2):
         
         draw_boy(x, y)
 
-def run_tri_right(x2, y2, x3, y3):
-    print('TRIANGLE_SIDE_RIGHT')
-
-    steps = 30
-    dx = (x3 - x2) / steps
-    dy = (y3 - y2) / steps
-
-    for i in range(steps):
-        x = x2 + dx * i
-        y = y2 + dy * i
-        
-        draw_boy(x, y)
-
-def run_tri_left(x3, y3, x1, y1):
-    print('TRIANGLE_SIDE_LEFT')
-
-    steps = 30
-    dx = (x1 - x3) / steps
-    dy = (y1 - y3) / steps
-
-    for i in range(steps):
-        x = x3 + dx * i
-        y = y3 + dy * i
-        
-        draw_boy(x, y)
-
 def run_side():
     print('SIDE')
     
     x1, x2, x3 = 0, 800, 800//2
     y1, y2, y3 = 0, 0, 600
 
-    run_tri_bottom(x1, y1, x2, y2)
-    run_tri_right(x2, y2, x3, y3)
-    run_tri_left(x3, y3, x1, y1)
+    run_tri_draw(x1, y1, x2, y2)
+    run_tri_draw(x2, y2, x3, y3)
+    run_tri_draw(x3, y3, x1, y1)
 
 def run_triangle():
     print('TRIANGLE')
