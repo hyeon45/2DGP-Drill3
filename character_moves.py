@@ -20,12 +20,35 @@ def run_circle():
         character.draw_now(x, y)
         delay(0.1)
 
-def run_rectangle():
-    print('RECTANGLE')
+
+def run_top():
+    print('TOP')
     pass
 
+def run_right():
+    print('RIGHT')
+    pass
+
+def run_bottom():
+    print('BOTTOM')
+    pass
+
+def run_left():
+    print('LEFT')
+    pass
+
+def run_rectangle():
+    print('RECTANGLE')
+
+    run_top()
+    run_right()
+    run_bottom()
+    run_left()
+    
+
+
 while (True):
-    run_circle()
+    #run_circle()
     run_rectangle()
     break #빠르게 확인하는 용도
     
