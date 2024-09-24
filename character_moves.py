@@ -55,21 +55,31 @@ def run_rectangle():
     run_bottom()
     run_left()
     
+def run_tri_bottom(x1, y1, x2, y2):
+    print('TRIANGLE_SIDE_BOTTOM')
+    pass
 
-def run_top_side():
-    print('TOP_SIDE')
+def run_tri_right(x2, y2, x3, y3):
+    print('TRIANGLE_SIDE_RIGHT')
     pass
+
+def run_tri_left(x3, y3, x1, y1):
+    print('TRIANGLE_SIDE_LEFT')
+    pass
+
+def run_side():
+    print('SIDE')
     
-def run_bottom_side():
-    print('BOTTOM_SIDE')
-    pass
+    x1, y1, x2, y2, x3, y3 = 400, 500, 200, 100, 600, 100
+
+    run_tri_bottom(x1, y1, x2, y2)
+    run_tri_right(x2, y2, x3, y3)
+    run_tri_left(x3, y3, x1, y1)
 
 def run_triangle():
     print('TRIANGLE')
 
-    run_bottom()
-    run_top_side()
-    run_bottom_side()
+    run_side()
 
 while (True):
     #run_circle()
