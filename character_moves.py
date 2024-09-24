@@ -56,9 +56,20 @@ def run_rectangle():
     run_left()
     
 
+def run_top_side():
+    print('TOP_SIDE')
+    pass
+    
+def run_bottom_side():
+    print('BOTTOM_SIDE')
+    pass
+
 def run_triangle():
     print('TRIANGLE')
-    pass
+
+    run_bottom()
+    run_top_side()
+    run_bottom_side()
 
 while (True):
     #run_circle()
