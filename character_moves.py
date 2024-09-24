@@ -50,16 +50,20 @@ def run_left():
 def run_rectangle():
     print('RECTANGLE')
 
-    #run_top()
-    #run_right()
-    #run_bottom()
+    run_top()
+    run_right()
+    run_bottom()
     run_left()
     
 
+def run_triangle():
+    print('TRIANGLE')
+    pass
 
 while (True):
     #run_circle()
-    run_rectangle()
+    #run_rectangle()
+    run_triangle()
     break #빠르게 확인하는 용도
     
 
