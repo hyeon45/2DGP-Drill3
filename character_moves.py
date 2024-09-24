@@ -26,34 +26,34 @@ def run_circle():
 def run_top():
     print('TOP')
 
-    for x in range(0, 800, 10):
+    for x in range(800, 0, -10):
         draw_boy(x, 550)
 
 def run_right():
     print('RIGHT')
 
-    for y in range(550, 0, -10):
+    for y in range(0, 550, 10):
         draw_boy(790, y)
 
 def run_bottom():
     print('BOTTOM')
     
-    for x in range(800, 0, -10):
+    for x in range(0, 800, 10):
         draw_boy(x, 0)
 
 def run_left():
     print('LEFT')
     
-    for y in range(0, 550, 10):
+    for y in range(550, 0, -10):
         draw_boy(0, y)
 
 def run_rectangle():
     print('RECTANGLE')
 
     run_top()
-    run_right()
-    run_bottom()
     run_left()
+    run_bottom()
+    run_right()
     
 def run_tri_draw(x1, y1, x2, y2):
     print('TRIANGLE_SIDE_DROW')
@@ -85,8 +85,8 @@ def run_triangle():
 
 while (True):
     #run_circle()
-    #run_rectangle()
-    run_triangle()
+    run_rectangle()
+    #run_triangle()
     break #빠르게 확인하는 용도
     
 
