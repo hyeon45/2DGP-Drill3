@@ -8,6 +8,7 @@ character = load_image('character.png')
 
 def draw_boy(x, y):
     clear_canvas()
+    grass.draw(400, 30)
     character.draw_now(x, y)
     delay(0.1)
 
@@ -32,19 +33,19 @@ def run_top():
 def run_right():
     print('RIGHT')
 
-    for y in range(0, 550, 10):
-        draw_boy(790, y)
+    for y in range(80, 550, 10):
+        draw_boy(750, y)
 
 def run_bottom():
     print('BOTTOM')
     
     for x in range(0, 800, 10):
-        draw_boy(x, 0)
+        draw_boy(x, 80)
 
 def run_left():
     print('LEFT')
     
-    for y in range(550, 0, -10):
+    for y in range(550, 80, -10):
         draw_boy(0, y)
 
 def run_rectangle():
@@ -58,7 +59,7 @@ def run_rectangle():
 def run_tri_draw(x1, y1, x2, y2):
     print('TRIANGLE_SIDE_DROW')
 
-    steps = 30
+    steps = 50
     dx = (x2 - x1) / steps
     dy = (y2 - y1) / steps
 
@@ -71,8 +72,8 @@ def run_tri_draw(x1, y1, x2, y2):
 def run_side():
     print('SIDE')
     
-    x1, x2, x3 = 0, 800, 800//2
-    y1, y2, y3 = 0, 0, 600
+    x1, x2, x3 = 50, 800, 800//2
+    y1, y2, y3 = 80, 80, 600
 
     run_tri_draw(x1, y1, x2, y2)
     run_tri_draw(x2, y2, x3, y3)
@@ -84,10 +85,9 @@ def run_triangle():
     run_side()
 
 while (True):
-    #run_circle()
+    run_circle()
     run_rectangle()
-    #run_triangle()
-    break #빠르게 확인하는 용도
+    run_triangle()
     
 
 close_canvas()
