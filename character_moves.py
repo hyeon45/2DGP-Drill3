@@ -34,11 +34,12 @@ def run_right():
 
     for y in range(550, 0, -10):
         draw_boy(790, y)
-    pass
 
 def run_bottom():
     print('BOTTOM')
-    pass
+    
+    for x in range(800, 0, -10):
+        draw_boy(x, 0)
 
 def run_left():
     print('LEFT')
@@ -48,7 +49,7 @@ def run_rectangle():
     print('RECTANGLE')
 
     #run_top()
-    run_right()
+    #run_right()
     run_bottom()
     run_left()
     
