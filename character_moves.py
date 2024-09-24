@@ -8,7 +8,10 @@ character = load_image('character.png')
 
 def run_circle():
     print('CIRCLE')
-    pass
+
+    clear_canvas()
+    character.draw_now(400, 30)
+    delay(0.1)
 
 def run_rectangle():
     print('RECTANGLE')
@@ -17,6 +20,7 @@ def run_rectangle():
 while (True):
     run_circle()
     run_rectangle()
+    break #빠르게 확인하는 용도
     
 
 close_canvas()
